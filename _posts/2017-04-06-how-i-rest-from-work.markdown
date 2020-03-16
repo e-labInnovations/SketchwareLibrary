@@ -9,6 +9,8 @@ tags: [Toasty, Toast]
 source: https://github.com/pprathameshmore/Toasty
 ---
 
+<button>View GitHub repo</button>
+
 ```java
 ________________________________________________
 EXAMPLE:
