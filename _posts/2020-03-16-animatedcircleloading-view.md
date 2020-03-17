@@ -3,20 +3,21 @@ layout: post
 title: AnimatedCircleLoading View
 date: 2020-03-17 09:09:20 +0300
 description: AnimatedCircleLoading View
-img: AnimatedCircleLoading View.png # Add image post (optional)
+img: # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [AnimatedCircleLoading,View]
+tags: [AnimatedCircleLoading, View]
 source:
 ---
 
 <div class="btnView">View Source <i class="fa fa-github"></i></div>
 
-```java
-# resources
+## resources
+
 https://raw.githubusercontent.com/GabrielGymkhanaCGN/JavaLibrary/master/Download/Animated_crcl.zip
 
-# EXAMPLE
+## EXAMPLE
 
+```java
 
 anim = new AnimatedCircleLoadingView(this);
 anim.setLayoutParams(new LinearLayout.LayoutParams(250, 250));
@@ -65,38 +66,43 @@ public void resetLoading() {
 	});
 }{
 
-__________________________________________
+```
 
-##### Attribute
+## Attribute
+
+```java
 setMainColor(int)
 setSecondaryColor(int)
 setCheckMarkTintColor(int)
 setFailureMarkTintColor(int)
 setTextColor(int)
+```
 
+###### Determinate
 
-##### Determinate
-animatedCircleLoadingView.startDeterminate();
+`animatedCircleLoadingView.startDeterminate();`
 
-##### Modify percent:
-animatedCircleLoadingView.setPercent(10);
+###### Modify percent:
 
-##### Indeterminate
-animatedCircleLoadingView.startIndeterminate();
+`animatedCircleLoadingView.setPercent(10);`
 
-##### Stop with success:
-animatedCircleLoadingView.stopOk();
+###### Indeterminate
 
-##### Stop with failure:
-animatedCircleLoadingView.stopFailure();
+`animatedCircleLoadingView.startIndeterminate();`
 
+###### Stop with success:
 
-##### Reset loading:
+`animatedCircleLoadingView.stopOk();`
+
+###### Stop with failure:
+
+`animatedCircleLoadingView.stopFailure();`
+
+###### Reset loading:
+
 animatedCircleLoadingView.resetLoading();
 
-_________________________________________
-
-
+```java
 
 public static class AnimatedCircleLoadingView extends FrameLayout {
   private static String DEFAULT_HEX_MAIN_COLOR = "#FF9A00";
@@ -163,7 +169,7 @@ public static class AnimatedCircleLoadingView extends FrameLayout {
 	public static void setTextColor(int _color) {
 		textColor = _color;
 	}
-	
+
   @Override
   protected void onSizeChanged(int w, int h, int oldw, int oldh) {
     super.onSizeChanged(w, h, oldw, oldh);
@@ -1154,4 +1160,3 @@ public static class FinishedOkView extends FinishedView {
 }
 
 ```
-      

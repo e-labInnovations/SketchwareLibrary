@@ -11,11 +11,11 @@ source:
 
 <div class="btnView">View Source <i class="fa fa-github"></i></div>
 
-```java
-________________________________
-Example
-## bind like this:
+## Example
 
+###### bind like this:
+
+```java
      BadgeFactory.create(this)
     .setTextColor(Color.White)
     .setWidthAndHeight(25,25)
@@ -26,23 +26,28 @@ Example
     .setShape(BadgeView.SHAPE_CIRCLE)
     .setSpace(10,10)
     .bind(view);
-     
-if u want to set space dont use ~~setMargin()~~,use `setSpace` instead.
-## There are some other constructer methods and you can be easy to create your own shape :
+```
 
+if u want to set space dont use ~~setMargin()~~,use `setSpace` instead.
+
+### There are some other constructer methods and you can be easy to create your own shape :
+
+```java
     BadgeFactory.createDot(this).setBadgeCount(20).bind(imageView);
     BadgeFactory.createCircle(this).setBadgeCount(20).bind(imageView);
     BadgeFactory.createRectangle(this).setBadgeCount(20).bind(imageView);
     BadgeFactory.createOval(this).setBadgeCount(20).bind(imageView);
     BadgeFactory.createSquare(this).setBadgeCount(20).bind(imageView);
     BadgeFactory.createRoundRect(this).setBadgeCount(20).bind(imageView);
-## unbind view just use `unbind` method.
-   
-     badgeView.unbind();
-_________________________________________
+```
 
+### unbind view just use `unbind` method.
 
+     `badgeView.unbind();`
 
+## Library
+
+```java
 
 public static class BadgeFactory {
     public static BadgeView createDot(Context context){
@@ -312,4 +317,3 @@ public static class BadgeView extends View {
 }
 
 ```
-      

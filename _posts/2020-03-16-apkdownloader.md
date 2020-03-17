@@ -1,19 +1,34 @@
 ---
 layout: post
-title: ApkDownloader
+title: AndroidAppUpdateLibrary
 date: 2020-03-17 09:09:20 +0300
-description: ApkDownloader
-img: ApkDownloader.png # Add image post (optional)
+description: AndroidAppUpdateLibrary
+img: AppUpdateLibrary.gif # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [ApkDownloader]
-source:
+tags: [Android, AppUpdate, Library]
+source: https://github.com/Piashsarker/AndroidAppUpdateLibrary
 ---
 
 <div class="btnView">View Source <i class="fa fa-github"></i></div>
 
+## EXAMPLE
+
+###### onClick
+
 ```java
+final DownloadApk downloadApk = new DownloadApk(MainActivity.this);
+downloadApk.startDownloadingApk("https://github.com/Piashsarker/AndroidAppUpdateLibrary/raw/master/app-debug.apk");
+```
 
+### Need permission
 
+```xml
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+```
+
+```java
 
 public static class DownloadApk extends Activity{
     private static ProgressDialog bar;
@@ -136,17 +151,4 @@ public static class DownloadApk extends Activity{
         }
     }
 }
-
-
-//EXAMPLE
-//onClick
-final DownloadApk downloadApk = new DownloadApk(MainActivity.this);
-downloadApk.startDownloadingApk("https://github.com/Piashsarker/AndroidAppUpdateLibrary/raw/master/app-debug.apk");
-
-//Need permission
-<uses-permission android:name="android.permission.INTERNET"/>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
- 
 ```
-      

@@ -11,10 +11,9 @@ source:
 
 <div class="btnView">View Source <i class="fa fa-github"></i></div>
 
+## EXAMPLE
+
 ```java
-# EXAMPLE
-
-
 final AnimationPack a = new AnimationPack();
 
 imageview1.setOnClickListener(new View.OnClickListener() {
@@ -22,27 +21,28 @@ imageview1.setOnClickListener(new View.OnClickListener() {
 		a.scaleIn(imageview1);
 	}
 });
+```
 
-# Attr
- * scaleIn(View)
- * scaleOut(View)
- * scale(view, float x, float y, long duration)
- * moveToRight(View)
- * moveToLeft(View)
- * moveToRightOrLeft(View, float x, long duration)
- * moveToBottom(View)
- * moveToTop(View)
- * moveToTopOrBottom(View, float y, long duration)
- * rotateToRight(View)
- * rotateToLeft(View)
- * rotateRightOrLeft(View, float value, long dur)
- * rotateUpSideDown(View)
- * rotateUpSideDown(View, float, long)
- 
+## Attr
 
-__________________________
+- scaleIn(View)
+- scaleOut(View)
+- scale(view, float x, float y, long duration)
+- moveToRight(View)
+- moveToLeft(View)
+- moveToRightOrLeft(View, float x, long duration)
+- moveToBottom(View)
+- moveToTop(View)
+- moveToTopOrBottom(View, float y, long duration)
+- rotateToRight(View)
+- rotateToLeft(View)
+- rotateRightOrLeft(View, float value, long dur)
+- rotateUpSideDown(View)
+- rotateUpSideDown(View, float, long)
 
+## Library
 
+```java
 public static class AnimationPack {
     public void scaleIn(View view) {
         view.animate().scaleX(1.1f).scaleY(1.1f).setDuration(2000);
@@ -88,7 +88,4 @@ public static class AnimationPack {
     }
 }
 
-
-
 ```
-      

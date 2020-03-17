@@ -3,17 +3,17 @@ layout: post
 title: AnimatedGradient TextView
 date: 2020-03-17 09:09:20 +0300
 description: AnimatedGradient TextView
-img: AnimatedGradient TextView.png # Add image post (optional)
+img: AnimatedGradient TextView.gif # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [AnimatedGradient,TextView]
-source:
+tags: [Animated, Gradient, TextView]
+source: https://github.com/Mursaat/AnimatedGradientTextView
 ---
 
 <div class="btnView">View Source <i class="fa fa-github"></i></div>
 
-```java
-EXAMPLE
+## EXAMPLE
 
+```java
 final AnimatedGradientTextView anim = new AnimatedGradientTextView(this);
 anim.setLayoutParams(new LinearLayout.LayoutParams(android.widget.LinearLayout.LayoutParams.WRAP_CONTENT, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT));
 anim.setText("Welcome To CyberGhostNet");
@@ -25,9 +25,11 @@ anim.setAngle(50);
 anim.setSpeed(1000);
 anim.setMaxFPS(24);
 linear1.addView(anim);
+```
 
-______________________
+## Library
 
+```java
 public class AnimatedGradientTextView extends TextView {
     GradientManager gradientManager;
     public String fonts;
@@ -299,4 +301,3 @@ public static class MathsUtils {
 }
 
 ```
-      

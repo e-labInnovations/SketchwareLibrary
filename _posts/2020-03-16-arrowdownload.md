@@ -1,21 +1,19 @@
 ---
 layout: post
-title: ArrowDownload
+title: ArrowDownloadButton
 date: 2020-03-17 09:09:20 +0300
-description: ArrowDownload
-img: ArrowDownload.png # Add image post (optional)
+description: ArrowDownloadButton
+img: ArrowDownloadButton.gif # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [ArrowDownload]
-source:
+tags: [Arrow, Download, Button]
+source: https://github.com/fenjuly/ArrowDownloadButton
 ---
 
 <div class="btnView">View Source <i class="fa fa-github"></i></div>
 
+## EXAMPLE
+
 ```java
-
-_______________________________
-EXAMPLE
-
 final ArrowDownloadButton txt = new ArrowDownloadButton(MainActivity.this);
 txt.setLayoutParams(new LinearLayout.LayoutParams(100, 100));
 linear1.addView(txt);
@@ -47,13 +45,11 @@ txt.setOnClickListener(new View.OnClickListener() {
     private int count;
     private int progress;
     public void noth() {
+```
 
-________________________________________
+## Library
 
-
-
-
-
+```java
 public static class ArrowDownloadButton extends View {
 
     private static final int BLUE_ONE = Color.rgb(46, 164, 242);
@@ -687,4 +683,3 @@ public static class ArrowDownloadButton extends View {
 
 
 ```
-      

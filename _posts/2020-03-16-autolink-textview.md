@@ -3,17 +3,17 @@ layout: post
 title: AutoLink TextView
 date: 2020-03-17 09:09:20 +0300
 description: AutoLink TextView
-img: AutoLink TextView.png # Add image post (optional)
+img: AutoLinkTextView.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [AutoLink,TextView]
-source:
+tags: [AutoLink, TextView]
+source: https://github.com/armcha/AutoLinkTextView
 ---
 
 <div class="btnView">View Source <i class="fa fa-github"></i></div>
 
-```java
-# EXAMPLE:
+## EXAMPLE:
 
+```java
 AutoLinkTextView active = new AutoLinkTextView(this);
 active.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
 active.setTextSize(15);
@@ -56,10 +56,11 @@ private void showDialog(String title, String message) {
 	final AlertDialog alert = builder.create();
 	alert.show();
 }{
+```
 
-________________________
+## Library
 
-
+```java
 
 public static class AutoLinkTextView extends TextView {
     private static final int MIN_PHONE_NUMBER_LENGTH = 8;
@@ -407,4 +408,3 @@ static class LinkTouchMovementMethod extends android.text.method.LinkMovementMet
 }
 
 ```
-      
