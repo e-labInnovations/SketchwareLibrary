@@ -1,16 +1,15 @@
-
-      ---
+---
 layout: post
 title: MatchView
-date: 2020-03-16 17:25:20 +0300
+date: 2020-03-17 09:09:20 +0300
 description: MatchView
 img: MatchView.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [MatchView]
-source: 
+source:
 ---
 
-<div>View Source <i class="fa fa-github"></i></div>
+<div class="btnView">View Source <i class="fa fa-github"></i></div>
 
 ```java
 ____________________________

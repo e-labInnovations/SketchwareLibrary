@@ -1,16 +1,15 @@
-
-      ---
+---
 layout: post
 title: Window7 Progress
-date: 2020-03-16 17:25:20 +0300
+date: 2020-03-17 09:09:20 +0300
 description: Window7 Progress
 img: Window7 Progress.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [Window7 Progress]
-source: 
+tags: [Window7,Progress]
+source:
 ---
 
-<div>View Source <i class="fa fa-github"></i></div>
+<div class="btnView">View Source <i class="fa fa-github"></i></div>
 
 ```java
 EXAMPLE

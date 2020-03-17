@@ -1,16 +1,15 @@
-
-      ---
+---
 layout: post
 title: CheckVersion
-date: 2020-03-16 17:25:20 +0300
+date: 2020-03-17 09:09:20 +0300
 description: CheckVersion
 img: CheckVersion.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [CheckVersion]
-source: 
+source:
 ---
 
-<div>View Source <i class="fa fa-github"></i></div>
+<div class="btnView">View Source <i class="fa fa-github"></i></div>
 
 ```java
 

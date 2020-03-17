@@ -1,16 +1,15 @@
-
-      ---
+---
 layout: post
 title: Youtube ProgressBar
-date: 2020-03-16 17:25:20 +0300
+date: 2020-03-17 09:09:20 +0300
 description: Youtube ProgressBar
 img: Youtube ProgressBar.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [Youtube ProgressBar]
-source: 
+tags: [Youtube,ProgressBar]
+source:
 ---
 
-<div>View Source <i class="fa fa-github"></i></div>
+<div class="btnView">View Source <i class="fa fa-github"></i></div>
 
 ```java
 # EXAMPLE
